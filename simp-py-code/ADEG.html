@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+    <style>
+        body{
+            font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin:0;
+            padding:0;
+            font-size: 20px;
+        }
+        div.body{
+            margin-left: 10px;
+        }
+        div.head{
+           background-color:rgb(21, 0, 141);
+           padding: 2px;
+           height: 107px;
+           width: 100%;
+        }
+        img.logo{
+            float: left;
+        }
+        h4{
+            margin-top: 0;
+            padding:20px 25px;
+            color: rgb(255, 255, 255);
+            font-size: 40px;
+            font-family: 'Times New Roman', Times, serif;
+        }
+        ul{
+            list-style-type: none;
+            margin-top: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color:orange;
+        }
+        ul li{
+            float: left;
+        }
+        
+        a{
+            font-size:17px;
+            text-decoration: none;
+            display: block;
+            padding: 15px 15px;
+            color: black; 
+        }
+        a:hover:not(.active){
+            color: rgb(255, 255, 255);
+        }
+        
+        a.active{
+            background-color:black;
+            color: white;
+        }     
+        div.service{
+            display: flex;
+        }
+        div.security {
+            background:rgb(250, 250, 250);
+            border: 1px solid #DDDDDD;
+            border-radius: 7px;
+            padding: 17px;
+            height: 700px;
+            width: 400px;
+            box-shadow:  0 5px 11px 2px rgba(0,9,30,.2);
+        }
+        
+        div.communication {
+            background:rgb(250, 250, 250);
+            border: 1px solid #DDDDDD;
+            border-radius: 7px;
+            margin-left: 10px;
+            padding: 17px;
+            height: 700px;
+            width: 400px;
+            box-shadow:  0 5px 11px 2px rgba(0,9,30,.2);
+        } 
+
+        div.painting {
+            background:rgb(250, 250, 250);
+            border: 1px solid #DDDDDD;
+            border-radius: 7px;
+            margin-left: 10px;
+            padding: 17px;
+            height: 700px;
+            width: 400px;
+            box-shadow:  0 5px 11px 2px rgba(0,9,30,.2);
+        }
+        div.foot{
+            background-color: rgb(21, 0, 141); 
+            margin: 0;
+            width:100%; /* fills the whole width based on the size of the webpage */
+            height:300px; 
+            padding: 0;
+        }
+        div.contact {
+            display: flex;
+            justify-content: center;
+            margin-top: -20px; /* to take the icons closer to "contact us:" */
+        }
+        @media screen and (max-width: 580px){
+            ul li{
+                float: none;
+            }
+            h4{
+                font-size: 30px;
+            }
+            div.service{
+                display: inline;
+            }
+            div.security{
+                margin-left: 10px;
+            }
+            div.communication{
+                margin-top: 10px;
+            }
+            div.painting{
+                margin-top: 10px;
+            }
+        }
+        
+  
+    </style>
+    <head>
+        <title>ADEG INTERGRATED SERVICES LIMITED</title>
+        <link href="https://fonts.googleapis.com/css2?family=Krona+One&display=swap" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/9670e91de0.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <div class="head">
+            <img class = "logo" src="ADEG LTD logo.PNG" width="100px" height="100px"><h4>ADEG INTERGRATED SERVICES LIMITED</h4>
+        </div>
+        <ul>
+            <li><a href="#" class="active"> Services </a></li>
+            <li><a href="ADEG product.html"> Product </a></li>
+            <li><a href="ADEG deals.html"> Deals </a></li>
+        </ul>  
+        <div class="body">
+            <h5> What we offer:  </h5>
+            <p> We at ADEG offer the following:</p>
+            <div class = "service">
+                <div class = "security">
+                    <img src = "cctv4.jpg" alt = "cctv camera" height = "300px" width = "400px"><br><br><br>
+                    <b>Security:</b> Haven't you ever wandered how you help your business grow, it is not all about what will 
+                    promote the business, how about what will make the business remain at that level? Well we have something
+                    to help with that: SECURITY. This can be defined as freedom from pontential harm it might not be
+                    happening yet but there is a tendency. ADEG can offer you security you need CCTv camera. Which will 
+                    help give a surveillance of your office, home, mall. e.t.c. 
+                </div>
+                <div class = "communication">
+                    <img src = "phone.jpg" alt = "phone" height = "300px" width = "400px"> <br><br><br>
+                    <b>Communication</b> You ever want may be your security men have ease when communicating, this can't be 
+                    really done on a mobile phone, because there may be no reception at their location. 
+                    We offer walkie-talkie to help ease better communication.
+                </div>        
+                <div class = "painting">
+                    <img src = "paint1.jpg" alt = "paint" height = "300px" width = "400px"> <br><br><br>
+                    <b>Painting</b><br> Colors, hmmm how wonderful. We offer emulsive paint, fine nice
+                    colors for your house, office and any place of your choice.
+                </div>
+            </div>
+        </div>
+        <hr>
+        <div class="foot">
+            <br><p style="color:white; font-size: 12px; text-align: center;">Contact us:</p>
+            <div class = "contact">
+                <a href = "#"><i class="fab fa-facebook-f"></i></a>
+                <a href = "#"><i class="fas fa-envelope"></i></a>
+                <a href = "#"><i class="fas fa-phone"></i></a>
+            </div>
+            <p style="color:white; font-size: 12px; text-align: center; padding: 10px 0;">Partners with:<br><br>
+            <img src="motorola_1.png" width="27px" height="27px"></p>
+        </div>
+        <!-- initial color rgb(177, 171, 161)-->
+    </body>
+</html>
